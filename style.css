@@ -71,6 +71,7 @@ main.main {
     justify-content: space-between;
     gap: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h1.main-heading {
