@@ -32,16 +32,16 @@ main.main {
     justify-content: center;
     height: fit-content;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .image {
     position: relative;
-    width: 375px;
+    width: 450px;
     background-image: url(images/image-header-desktop.jpg);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 325px;
+    height: 400px;
 }
 
 .image::after {
@@ -51,15 +51,15 @@ main.main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(277, 64%, 61%, .5);
+    background-color: hsla(277, 64%, 61%, .6);
 }
 
 .content {
-    width: 375px;
+    width: 450px;
     padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     gap: 30px;
 }
@@ -99,14 +99,16 @@ h2.stat-headings {
         flex-direction: column;
         text-align: center;
     }
+    .content {
+        max-width: 355px;
+    }
     
     .stats {
         flex-direction: column;
     }
     .image {
-        background-image: url(images/image-header-mobile.jpg);
         width: 100%;
-        height: 285px;
+        height: 225px;
     }
 
 }
